@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89239223-F7AC-4E25-8D67-5342A04D374C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SedapMakanSystemAdmin</RootNamespace>
+    <AssemblyName>SedapMakanSystemAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelOrderForm.Designer.cs">
+      <DependentUpon>cancelOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cartForm.Designer.cs">
+      <DependentUpon>cartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefHomeForm.Designer.cs">
+      <DependentUpon>ChefHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartRules.cs" />
+    <Compile Include="ManageMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMenuForm.Designer.cs">
+      <DependentUpon>ManageMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuService.cs" />
+    <Compile Include="OrderService.cs" />
+    <Compile Include="PurchaseRule.cs" />
+    <Compile Include="Ewallet Functions.cs" />
+    <Compile Include="FeedbackReplyRule.cs" />
+    <Compile Include="feedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedbackForm.Designer.cs">
+      <DependentUpon>feedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackReplyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackReplyForm.Designer.cs">
+      <DependentUpon>FeedbackReplyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopUpRequestProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopUpRequestProgressForm.Designer.cs">
+      <DependentUpon>TopUpRequestProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopUpRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopUpRequestForm.Designer.cs">
+      <DependentUpon>TopUpRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveRejectRefundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveRejectRefundForm.Designer.cs">
+      <DependentUpon>ApproveRejectRefundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewRefundRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewRefundRequests.Designer.cs">
+      <DependentUpon>ReviewRefundRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopUpCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopUpCustomerForm.Designer.cs">
+      <DependentUpon>TopUpCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFeedbackForm.Designer.cs">
+      <DependentUpon>ViewFeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerMainMenuForm.Designer.cs">
+      <DependentUpon>ManagerMainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMenuForm.Designer.cs">
+      <DependentUpon>ViewMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="orderStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderStatusForm.Designer.cs">
+      <DependentUpon>orderStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="refundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="refundForm.Designer.cs">
+      <DependentUpon>refundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="refundStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="refundStatusForm.Designer.cs">
+      <DependentUpon>refundStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFunctions.cs" />
+    <Compile Include="NavigationFunctions.cs" />
+    <Compile Include="EditOwnAccForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOwnAccForm.Designer.cs">
+      <DependentUpon>EditOwnAccForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SedapMakanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SedapMakanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrdersForm.Designer.cs">
+      <DependentUpon>ViewOrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WalletUsageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WalletUsageForm.Designer.cs">
+      <DependentUpon>WalletUsageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm.Designer.cs">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveUserForm.Designer.cs">
+      <DependentUpon>RemoveUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccountForm.Designer.cs">
+      <DependentUpon>UserAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveRejectRefundForm.resx">
+      <DependentUpon>ApproveRejectRefundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelOrderForm.resx">
+      <DependentUpon>cancelOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartForm.resx">
+      <DependentUpon>cartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefHomeForm.resx">
+      <DependentUpon>ChefHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOwnAccForm.resx">
+      <DependentUpon>EditOwnAccForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedbackForm.resx">
+      <DependentUpon>feedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackReplyForm.resx">
+      <DependentUpon>FeedbackReplyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMenuForm.resx">
+      <DependentUpon>ManageMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopUpRequestForm.resx">
+      <DependentUpon>TopUpRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewRefundRequests.resx">
+      <DependentUpon>ReviewRefundRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerMainMenuForm.resx">
+      <DependentUpon>ManagerMainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopUpCustomerForm.resx">
+      <DependentUpon>TopUpCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopUpRequestProgressForm.resx">
+      <DependentUpon>TopUpRequestProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFeedbackForm.resx">
+      <DependentUpon>ViewFeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMenuForm.resx">
+      <DependentUpon>ViewMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderStatusForm.resx">
+      <DependentUpon>orderStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="refundForm.resx">
+      <DependentUpon>refundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="refundStatusForm.resx">
+      <DependentUpon>refundStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm.resx">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveUserForm.resx">
+      <DependentUpon>RemoveUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccountForm.resx">
+      <DependentUpon>UserAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewOrdersForm.resx">
+      <DependentUpon>ViewOrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WalletUsageForm.resx">
+      <DependentUpon>WalletUsageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SedapMakanDataSet.xsc">
+      <DependentUpon>SedapMakanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SedapMakanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SedapMakanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SedapMakanDataSet.xss">
+      <DependentUpon>SedapMakanDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SedapMakan-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFinale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_empty.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_filled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
