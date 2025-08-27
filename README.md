@@ -1,5 +1,5 @@
-# SedapMakan, a restaurant management system
-This software is created for my university's Object-Oriented Programming module group assignment. We were given a fictional case that requires us to create a restaurant management system for SedapMakan, a fictional restaurant. The SedapMakan restaurant management system is developed for both customer and employee use. The capabilities of SedapMakan is listed below:
+# SedapMakan, a restaurant management system 
+This software is created for my university's Object-Oriented Programming module group assignment. We were given a fictional case that requires us to create a restaurant management system for SedapMakan, a fictional restaurant. The SedapMakan restaurant management system is developed in the .NET framework and is created for both customer/employee use. The capabilities of SedapMakan is listed below:
 
 ## System Admin 
 -	Add or remove user to system
